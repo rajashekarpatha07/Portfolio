@@ -33,7 +33,7 @@ const Projects = () => {
         '25+ type-safe RESTful APIs',
         '90% reduction in storage load'
       ],
-      github: 'https://github.com/rajashekarpatha07/CollegeHubDep',
+      github: 'https://github.com/rajashekarpatha07/CollegeHubV2',
       live: 'https://collegehubdep.onrender.com/',
       color: 'from-purple-500 to-pink-500'
     }
