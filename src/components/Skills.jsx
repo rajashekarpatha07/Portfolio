@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
-  Server, Database, Cloud, Lock, Terminal, Code2,
-  Sparkles, Zap, Shield, Layers
+  Server, Database, Cloud, Code2, Terminal, 
+  Sparkles, Zap
 } from 'lucide-react';
 
 const Skills = () => {
@@ -17,12 +17,20 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'Backend & APIs',
+      title: 'Languages',
+      icon: Code2,
+      skills: ['TypeScript', 'JavaScript', 'Python'],
+      gradient: 'from-blue-500 to-cyan-500',
+      iconColor: 'text-blue-400',
+      bgGradient: 'from-blue-500/10 to-cyan-500/10'
+    },
+    {
+      title: 'Backend',
       icon: Server,
-      skills: ['Node.js', 'Express.js', 'REST APIs', 'WebSockets (Socket.io)', 'JWT'],
-      gradient: 'from-cyan-500 to-blue-500',
-      iconColor: 'text-cyan-400',
-      bgGradient: 'from-cyan-500/10 to-blue-500/10'
+      skills: ['Node.js', 'Express.js', 'Prisma (ORM)', 'REST APIs', 'WebSockets (Socket.io)', 'JWT'],
+      gradient: 'from-green-500 to-emerald-500',
+      iconColor: 'text-green-400',
+      bgGradient: 'from-green-500/10 to-emerald-500/10'
     },
     {
       title: 'Databases & Caching',
@@ -33,17 +41,9 @@ const Skills = () => {
       bgGradient: 'from-purple-500/10 to-pink-500/10'
     },
     {
-      title: 'Languages',
-      icon: Code2,
-      skills: ['JavaScript', 'Python'],
-      gradient: 'from-green-500 to-emerald-500',
-      iconColor: 'text-green-400',
-      bgGradient: 'from-green-500/10 to-emerald-500/10'
-    },
-    {
-      title: 'Developer Tools',
-      icon: Terminal,
-      skills: ['Git', 'GitHub', 'Postman', 'Swagger', 'Linux', 'VS Code'],
+      title: 'DevOps & Tools',
+      icon: Cloud,
+      skills: ['Git', 'GitHub', 'Postman', 'Swagger', 'Linux', 'VS Code', 'Docker'],
       gradient: 'from-orange-500 to-red-500',
       iconColor: 'text-orange-400',
       bgGradient: 'from-orange-500/10 to-red-500/10'
